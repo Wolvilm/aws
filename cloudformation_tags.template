@@ -1,0 +1,63 @@
+Metadata:
+  AWS::CloudFormation::Interface: # Interface for console deployments
+    ParameterGroups:
+      - Label: # tag 1
+          default: "(Optional) Enter Key and Value for First Tag"
+        Parameters:
+          - pUserDefinedTagKey1
+          - pUserDefinedTagValue1
+
+      - Label: # tag 2 
+          default: "(Optional) Enter Key and Value for Second Tag"
+        Parameters:         
+          - pUserDefinedTagKey2
+          - pUserDefinedTagValue2
+
+      - Label: # tag 3
+          default: "(Optional) Enter Key and Value for Third Tag"
+        Parameters:          
+          - pUserDefinedTagKey3
+          - pUserDefinedTagValue3
+
+      - Label: # tag 4
+          default: "(Optional) Enter Key and Value for Fourth Tag"
+        Parameters:          
+          - pUserDefinedTagKey4
+          - pUserDefinedTagValue4
+
+      - Label: # tag 5
+          default: "(Optional) Enter Key and Value for Fifth Tag"
+        Parameters:
+          - pUserDefinedTagKey5
+          - pUserDefinedTagValue5
+
+      - Label: # replica regions selection
+          default: "(Optional) Select Replication Regions" 
+        Parameters: 
+          - pReplicaRegion1
+          - pReplicaRegion2
+          - pReplicaRegion3
+          - pReplicaRegion4
+          - pReplicaRegion5
+
+    ParameterLabels:
+      pUserDefinedTagKey1:
+        default: The key for the 1st tag
+      pUserDefinedTagValue1:
+        default: The value for the 1st tag
+      pUserDefinedTagKey2:
+        default: The key for the 2nd tag
+      pUserDefinedTagValue2:
+        default: The value for the 2nd tag
+      pUserDefinedTagKey3:
+        default: The key for the 3rd tag
+      pUserDefinedTagValue3:
+        default: The value for the 3rd tag
+      pUserDefinedTagKey4:
+        default: The key for the 4th tag
+      pUserDefinedTagValue4:
+        default: The value for the 4th tag
+      pUserDefinedTagKey5:
+        default: The key for the 5th tag
+      pUserDefinedTagValue5:
+        default: The value for the 5th tag
